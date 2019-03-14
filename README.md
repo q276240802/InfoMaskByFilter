@@ -1,6 +1,6 @@
 ## 敏感信息屏蔽组件--InfoMask
 
-###what's this
+### what's this
 适用于spring boot的使用过滤器实现的敏感信息屏蔽组件，通过过滤器拦截返回对象的json，使用`*`对json中配置的字段按照自定义屏蔽规则进行屏蔽  
 
 ### Features
