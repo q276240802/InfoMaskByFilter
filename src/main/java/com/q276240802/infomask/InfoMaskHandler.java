@@ -55,6 +55,9 @@ public class InfoMaskHandler {
         }
         for (Map.Entry<String, String> entry:fields.entrySet()){
             JsonNode jsonField = jsonNode.findValue(entry.getKey());
+            if (jsonField==null){
+                continue;
+            }
             if (jsonField.isArray()) {
                 Iterator<JsonNode> elements = jsonField.elements();
                 ArrayNode arrayNode = ((ObjectNode) jsonNode).putArray(entry.getKey());
